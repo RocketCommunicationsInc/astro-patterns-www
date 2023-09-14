@@ -1,0 +1,155 @@
+[
+	{
+		"name": "accordion-item"
+	},
+	{
+		"name": "accordion"
+	},
+	{
+		"name": "breadcrumb-item"
+	},
+	{
+		"name": "breadcrumb"
+	},
+	{
+		"name": "button"
+	},
+	{
+		"name": "card"
+	},
+	{
+		"name": "checkbox-group"
+	},
+	{
+		"name": "checkbox"
+	},
+	{
+		"name": "classification-marking"
+	},
+	{
+		"name": "clock"
+	},
+	{
+		"name": "container"
+	},
+	{
+		"name": "dialog"
+	},
+	{
+		"name": "gsb"
+	},
+	{
+		"name": "icon"
+	},
+	{
+		"name": "indeterminate-progress"
+	},
+	{
+		"name": "input"
+	},
+	{
+		"name": "log"
+	},
+	{
+		"name": "menu-item-divider"
+	},
+	{
+		"name": "menu-item"
+	},
+	{
+		"name": "menu"
+	},
+	{
+		"name": "monitoring-icon"
+	},
+	{
+		"name": "monitoring-progress-icon"
+	},
+	{
+		"name": "notification"
+	},
+	{
+		"name": "option-group"
+	},
+	{
+		"name": "option"
+	},
+	{
+		"name": "popup"
+	},
+	{
+		"name": "progress"
+	},
+	{
+		"name": "pushbutton"
+	},
+	{
+		"name": "radio"
+	},
+	{
+		"name": "radiogroup"
+	},
+	{
+		"name": "ruler"
+	},
+	{
+		"name": "segmentedbutton"
+	},
+	{
+		"name": "select"
+	},
+	{
+		"name": "slider"
+	},
+	{
+		"name": "status"
+	},
+	{
+		"name": "switch"
+	},
+	{
+		"name": "tab-panel"
+	},
+	{
+		"name": "tab-panels"
+	},
+	{
+		"name": "tab"
+	},
+	{
+		"name": "table"
+	},
+	{
+		"name": "tabs"
+	},
+	{
+		"name": "tag"
+	},
+	{
+		"name": "textarea"
+	},
+	{
+		"name": "time-region"
+	},
+	{
+		"name": "timeline"
+	},
+	{
+		"name": "toast-stack"
+	},
+	{
+		"name": "toast"
+	},
+	{
+		"name": "tooltip"
+	},
+	{
+		"name": "track"
+	},
+	{
+		"name": "tree-node"
+	},
+	{
+		"name": "tree"
+	}
+]

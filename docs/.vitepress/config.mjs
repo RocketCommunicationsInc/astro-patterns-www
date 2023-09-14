@@ -2,12 +2,13 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Patterns",
-  description: "Patterns",
+  title: "Astro Nova",
+  description: "Astro Nova",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Components', link: '/components/index.html' },
       { text: 'Patterns', link: '/patterns/index.html' }
     ],
 
@@ -22,7 +23,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/RocketCommunicationsInc/astro' }
     ],
     algolia: {
 			appId: "6VY3VEO12D",
