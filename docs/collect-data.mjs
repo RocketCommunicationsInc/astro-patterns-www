@@ -27,17 +27,17 @@ const data = await Promise.all(
   })
 )
 
-await fs.writeFile('./docs/data.json', JSON.stringify(data), 'utf-8')
+// await fs.writeFile('./docs/data.json', JSON.stringify(data), 'utf-8')
 
 
-const components = await fs.readdir('./docs/components/')
+// const components = await fs.readdir('./docs/components/')
 
-const componentData = await Promise.all(
-  components.filter(article => !article.includes('index')).map(async (article) => {
-	return {
-		name: article.replace('.md','')
-	}
-  })
-)
+// const componentData = await Promise.all(
+//   components.filter(article => !article.includes('index')).map(async (article) => {
+// 	return {
+// 		name: article.replace('.md','')
+// 	}
+//   })
+// )
 
-await fs.writeFile('./docs/components.json', JSON.stringify(componentData), 'utf-8')
+// await fs.writeFile('./docs/components.json', JSON.stringify(componentData), 'utf-8')

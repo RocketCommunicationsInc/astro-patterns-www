@@ -1,15 +1,20 @@
 [
 	{
-		"name": "accordion-item"
+		"name": "accordion",
+		"subcomponents": [
+			{
+				"name": "accordion-item"
+			}
+		]
 	},
+
 	{
-		"name": "accordion"
-	},
-	{
-		"name": "breadcrumb-item"
-	},
-	{
-		"name": "breadcrumb"
+		"name": "breadcrumb",
+		"subcomponents": [
+			{
+				"name": "breadcrumb-item"
+			}
+		]
 	},
 	{
 		"name": "button"
@@ -50,15 +55,7 @@
 	{
 		"name": "log"
 	},
-	{
-		"name": "menu-item-divider"
-	},
-	{
-		"name": "menu-item"
-	},
-	{
-		"name": "menu"
-	},
+
 	{
 		"name": "monitoring-icon"
 	},
@@ -68,14 +65,20 @@
 	{
 		"name": "notification"
 	},
+
 	{
-		"name": "option-group"
-	},
-	{
-		"name": "option"
-	},
-	{
-		"name": "popup"
+		"name": "popup",
+		"subcomponents":[
+			{
+				"name": "menu-item-divider"
+			},
+			{
+				"name": "menu-item"
+			},
+			{
+				"name": "menu"
+			}
+		]
 	},
 	{
 		"name": "progress"
@@ -83,20 +86,29 @@
 	{
 		"name": "pushbutton"
 	},
+
 	{
-		"name": "radio"
+		"name": "radiogroup",
+		"subcomponents": [
+			{
+				"name": "radio"
+			}
+		]
 	},
-	{
-		"name": "radiogroup"
-	},
-	{
-		"name": "ruler"
-	},
+
 	{
 		"name": "segmentedbutton"
 	},
 	{
-		"name": "select"
+		"name": "select",
+		"subcomponents": [
+			{
+				"name": "option-group"
+			},
+			{
+				"name": "option"
+			}
+		]
 	},
 	{
 		"name": "slider"
@@ -107,20 +119,23 @@
 	{
 		"name": "switch"
 	},
-	{
-		"name": "tab-panel"
-	},
-	{
-		"name": "tab-panels"
-	},
-	{
-		"name": "tab"
-	},
+
 	{
 		"name": "table"
 	},
 	{
-		"name": "tabs"
+		"name": "tabs",
+		"subcomponents": [
+			{
+				"name": "tab-panel"
+			},
+			{
+				"name": "tab-panels"
+			},
+			{
+				"name": "tab"
+			}
+		]
 	},
 	{
 		"name": "tag"
@@ -128,28 +143,39 @@
 	{
 		"name": "textarea"
 	},
+
 	{
-		"name": "time-region"
+		"name": "timeline",
+		"subcomponents": [
+			{
+				"name": "time-region"
+			},
+			{
+				"name": "track"
+			},
+			{ "name": "ruler"}
+		]
 	},
+
 	{
-		"name": "timeline"
-	},
-	{
-		"name": "toast-stack"
-	},
-	{
-		"name": "toast"
+		"name": "toast",
+		"subcomponents": [
+			{
+				"name": "toast-stack"
+			}
+		]
 	},
 	{
 		"name": "tooltip"
 	},
+
+
 	{
-		"name": "track"
-	},
-	{
-		"name": "tree-node"
-	},
-	{
-		"name": "tree"
+		"name": "tree",
+		"subcomponents": [
+			{
+				"name": "tree-node"
+			}
+		]
 	}
 ]

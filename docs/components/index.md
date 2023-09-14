@@ -16,11 +16,16 @@ const transformDate = (date) =>
 
 # Patterns
 
-<ul>
+<ul class="list-none">
 <div v-for="article in articles">
-
-<li><a :href="article.name">{{ article.name }}</a></li>
-
+<li>
+	<a :href="article.name">{{ article.name }}</a>
+	<ul v-if="article.subcomponents">
+	<li v-for="subcomponent in article.subcomponents">
+	 <a :href="subcomponent.name">-> {{subcomponent.name}} </a>
+	</li>
+	</ul>
+</li>
 
 </div>
 </ul>
