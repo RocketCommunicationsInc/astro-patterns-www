@@ -16,11 +16,10 @@ const transformDate = (date) =>
 
 # Patterns
 
-<ul>
-<div v-for="article in articles">
-
-<li><a :href="article.name">{{ article.name }}</a></li>
-
-
-</div>
+<ul class="grid grid-cols-1 gap-4">
+  <li class="list-none border border-gray-100 p-4 rounded" v-for="article in articles">
+    <a :href="article.name" class="capitalize text-2xl no-underline">
+    {{article.name.replace('-', ' ')}}
+    </a>
+  </li>
 </ul>
