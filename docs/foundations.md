@@ -1,4 +1,0 @@
-# Foundation
-
-
-[Typography](./typography)

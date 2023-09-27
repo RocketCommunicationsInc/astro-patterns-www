@@ -10,20 +10,32 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Foundations', link: '/foundations.html' },
+      { text: 'Foundations', link: '/foundations/index.html' },
       { text: 'Patterns', link: '/patterns/index.html' },
       { text: 'v0.0.1' }
     ],
 
-    sidebar: [
-      // {
-      //   text: 'Examples',
-      //   items: [
-      //     { text: 'Markdown Examples', link: '/markdown-examples' },
-      //     { text: 'Runtime API Examples', link: '/api-examples' }
-      //   ]
-      // }
-    ],
+    sidebar: {
+
+      '/foundations': [
+        {
+          text: 'Foundations',
+          items: [
+            { text: 'Typography', link: '/foundations/typography' },
+            { text: 'Spacing', link: '/foundations/spacing' }
+          ]
+        }
+      ]
+    },
+    // sidebar: [
+    //   {
+    //     text: 'Examples',
+    //     items: [
+    //       { text: 'Markdown Examples', link: '/markdown-examples' },
+    //       { text: 'Runtime API Examples', link: '/api-examples' }
+    //     ]
+    //   }
+    // ],
 
     // socialLinks: [
     //   { icon: 'github', link: 'https://github.com/RocketCommunicationsInc/astro' }
