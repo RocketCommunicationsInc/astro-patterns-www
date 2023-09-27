@@ -21,8 +21,9 @@ export default defineConfig({
         {
           text: 'Foundations',
           items: [
+            { text: 'Dimension', link: '/foundations/dimension' },
+            { text: 'Spacing', link: '/foundations/spacing' },
             { text: 'Typography', link: '/foundations/typography' },
-            { text: 'Spacing', link: '/foundations/spacing' }
           ]
         }
       ]

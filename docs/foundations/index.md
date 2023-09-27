@@ -1,5 +1,6 @@
 # Foundation
 
 
-* [Typography](./typography)
+* [Dimension](./dimension)
 * [Spacing](./spacing)
+* [Typography](./typography)
