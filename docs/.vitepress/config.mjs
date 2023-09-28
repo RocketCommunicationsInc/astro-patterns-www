@@ -6,8 +6,24 @@ export default defineConfig({
   description: "WIP",
   appearance: false,
   ignoreDeadLinks: true,
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => {
+          return tag.toLowerCase().indexOf("sl-") === 0;
+        }
+      }
+    }
+  },
   head: [
-
+    // [
+    //   'script',
+    //   {
+    //     async: true,
+    //     type: 'module',
+    //     src: 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/components/copy-button/copy-button.js'
+    //   }
+    // ],
     [
       'script',
       {
@@ -15,6 +31,7 @@ export default defineConfig({
         type: 'module',
         src: 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/components/tooltip/tooltip.js'
       }
+
     ],
   ],
   themeConfig: {

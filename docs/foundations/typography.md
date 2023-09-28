@@ -20,11 +20,13 @@ const convertPxToRem = (px) => {
 # Typography
 
 
-<FloatingToken token="font-size-xl"></FloatingToken>
 
-Astro typography is built using a [modular scale](https://alistapart.com/article/more-meaningful-typography/). We use the Major Second (1.125) scale with a base font size of 16px.
+
+Astro typography is built using a [modular scale](https://alistapart.com/article/more-meaningful-typography/). We use the Major Second (1.125) scale with a <FloatingToken token="base-font-unit"></FloatingToken> token.
 
 ## Font Sizes
+
+
 
 <ul class="list-none leading-none m-0 p-0 mt-4">
  <li v-for="(token, index) in filterTokensByType('fontSizes')" :index="token[0]" class="list-none mb-8">
@@ -61,13 +63,13 @@ However, at larger font sizes, manually adjust the line height using the followi
 
 | Font Size | Line Height |
 | --------- | ----------- |
-| xs   | line-height-normal / 1.5     |
-| sm   | line-height-normal / 1.5     |
-| base   | line-height-normal / 1.5     |
-| lg   | line-height-normal / 1.5     |
-| xl   | line-height-tight / 1.25     |
-| 2xl   | line-height-tight / 1.25     |
-| 3xl   | line-height-tight / 1.25     |
-| 4xl   | line-height-tight / 1.25     |
-| 5xl   | line-height-tight / 1.25     |
-| 6xl   | line-height-tight / 1.25     |
+| <FloatingToken token="font-size-xs"/>   | <FloatingToken token="line-height-normal"/>      |
+| <FloatingToken token="font-size-sm"/>   | <FloatingToken token="line-height-normal"/>      |
+| <FloatingToken token="font-size-base"/>   | <FloatingToken token="line-height-normal"/>      |
+| <FloatingToken token="font-size-lg"/>   | <FloatingToken token="line-height-normal"/>      |
+| <FloatingToken token="font-size-xl"/>   | <FloatingToken token="line-height-tight"/>      |
+| <FloatingToken token="font-size-2xl"/>   | <FloatingToken token="line-height-tight"/>      |
+| <FloatingToken token="font-size-3xl"/>   | <FloatingToken token="line-height-tight"/>      |
+| <FloatingToken token="font-size-4xl"/>   | <FloatingToken token="line-height-tight"/>      |
+| <FloatingToken token="font-size-5xl"/>   | <FloatingToken token="line-height-tight"/>      |
+| <FloatingToken token="font-size-6xl"/>   | <FloatingToken token="line-height-tight"/>      |
