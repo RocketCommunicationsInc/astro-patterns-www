@@ -9,10 +9,34 @@ const filterTokensByType = (filterName) => {
  })
 }
 
+const gapMap = {
+	'icon-size-xs': '4px',
+	'icon-size-sm': '4px',
+	'icon-size-base': '6px',
+	'icon-size-lg': '6px',
+	'icon-size-xl': '8px',
+	'icon-size-2xl': '8px',
+	'icon-size-3xl': '10px',
+	'icon-size-4xl': '10px',
+	'icon-size-5xl': '12px',
+	'icon-size-6xl': '12px',
+}
 
 const dimensionTokens = tokens.icon.size
 const convertPxToRem = (px) => {
  return  0.0625  * px
+}
+
+const getGap = (token) => {
+	return gapMap[`icon-size-${token}`];
+}
+
+const getSpacingToken = (pixelValue) => {
+	for (const [key, value] of Object.entries(tokens)) {
+		if (value.value === pixelValue && value.type === 'spacing') {
+			return key
+		}
+	}
 }
 
 </script>
@@ -38,33 +62,35 @@ Icon sizes map 1:1 with font sizes.
 
 ## Icon / Font Size Pairing
 
+> Implementation Tip: set SVGs `width` and `height` to `1em` to inherit font size rather than explicitly using the icon-size tokens.
 
 
 <ul class="list-none leading-none m-0 p-0 mt-4">
-	<li v-for="(token, index) in dimensionTokens" :index="token[0]" class="list-none mb-8">
-		<div class="flex" :style="{ 'font-size': `${token.value}px` }">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" :style="{ 'height': `${token.value}px`, 'width': `${token.value}px` }">
+	<li v-for="(token, index) in dimensionTokens" :index="token[0]" class="list-none mb-8 ">
+		<div class="flex items-center" :style="{ 'font-size': `${token.value}px`, 'gap': getGap(index) }">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 1em; width: 1em;">
 			<path d="M13.2 7.07 10.25 11l2.25 3c.33.44.24 1.07-.2 1.4a.994.994 0 0 1-1.4-.2c-1.05-1.4-2.31-3.07-3.1-4.14-.4-.53-1.2-.53-1.6 0l-4 5.33c-.49.67-.02 1.61.8 1.61h18c.82 0 1.29-.94.8-1.6l-7-9.33a.993.993 0 0 0-1.6 0Z"/>
 			</svg>
 			The Misty Mountain
 		</div>
 		<div class="flex flex-col">
-			<p class="m-0 mt-2 p-0 text-sm font-mono text-gray-400">icon-size-{{ index }} / font-size-{{index}}</p>
-			<span class="text-xs text-gray-400">{{token.value}}px / {{convertPxToRem(token.value)}}rem</span>
+			<p class="m-0 mt-2 p-0 text-sm font-mono text-gray-400">icon-size-{{ index }} / font-size-{{index}} / {{getSpacingToken( getGap(index))}}</p>
+			<span class="text-xs text-gray-400">{{token.value}}px / {{convertPxToRem(token.value)}}rem / {{getGap(index)}}</span>
 		</div>
 	</li>
 </ul>
 
-@TODO - Text Icon Gap tokens
-| Token | Value |
-| ----- | ----- |
-| text-icon-gap-90 | 4px |
-| text-icon-gap-80 | 4px |
-| text-icon-gap-100 | 5px |
-| text-icon-gap-200 | 6px |
-| text-icon-gap-300 | 6px |
-| text-icon-gap-400 | 7px |
-| text-icon-gap-500 | 8px |
-| text-icon-gap-600 | 9px |
-| text-icon-gap-700 | 10px |
-| text-icon-gap-800 | 11px |
+## Icon / Gap Pairing 
+
+| Icon Size Token | Font Size Token | Gap Token |
+| --------------- | --------------- | --------- |
+| icon-size-xs | font-size-xs | icon-gap-xs |
+| icon-size-sm | font-size-sm | icon-gap-sm |
+| icon-size-base | font-size-base | icon-gap-base |
+| icon-size-lg | font-size-lg | icon-gap-lg |
+| icon-size-xl | font-size-xl | icon-gap-xl |
+| icon-size-2xl | font-size-2xl | icon-gap-2xl |
+| icon-size-3xl | font-size-3xl | icon-gap-3xl |
+| icon-size-4xl | font-size-4xl | icon-gap-4xl |
+| icon-size-5xl | font-size-5xl | icon-gap-5xl |
+| icon-size-6xl | font-size-6xl | icon-gap-6xl |
