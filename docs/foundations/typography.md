@@ -56,10 +56,10 @@ However, at larger font sizes, manually adjust the line height using the followi
 
 | Font Size | Line Height |
 | --------- | ----------- |
-| xs   | line-height-normal / 1     |
-| sm   | line-height-normal / 1     |
-| base   | line-height-normal / 1     |
-| lg   | line-height-normal / 1     |
+| xs   | line-height-normal / 1.5     |
+| sm   | line-height-normal / 1.5     |
+| base   | line-height-normal / 1.5     |
+| lg   | line-height-normal / 1.5     |
 | xl   | line-height-tight / 1.25     |
 | 2xl   | line-height-tight / 1.25     |
 | 3xl   | line-height-tight / 1.25     |
