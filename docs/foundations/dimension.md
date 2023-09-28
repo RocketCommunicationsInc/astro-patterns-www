@@ -1,5 +1,6 @@
 <script setup>
 import tokens from '../tokens.json'
+import FloatingToken from '../.vitepress/components/FloatingToken.vue'
 
 const filterTokensByType = (filterName) => {
  return Object.entries(tokens).filter((key) => {
@@ -84,13 +85,13 @@ Icon sizes map 1:1 with font sizes.
 
 | Icon Size Token | Font Size Token | Gap Token |
 | --------------- | --------------- | --------- |
-| icon-size-xs | font-size-xs | icon-gap-xs |
-| icon-size-sm | font-size-sm | icon-gap-sm |
-| icon-size-base | font-size-base | icon-gap-base |
-| icon-size-lg | font-size-lg | icon-gap-lg |
-| icon-size-xl | font-size-xl | icon-gap-xl |
-| icon-size-2xl | font-size-2xl | icon-gap-2xl |
-| icon-size-3xl | font-size-3xl | icon-gap-3xl |
-| icon-size-4xl | font-size-4xl | icon-gap-4xl |
-| icon-size-5xl | font-size-5xl | icon-gap-5xl |
-| icon-size-6xl | font-size-6xl | icon-gap-6xl |
+| <FloatingToken token="icon-size-xs"/> | <FloatingToken token="font-size-xs"/> | <FloatingToken token="icon-gap-xs"/> |
+| <FloatingToken token="icon-size-sm"/> | <FloatingToken token="font-size-sm"/> | <FloatingToken token="icon-gap-sm"/> |
+| <FloatingToken token="icon-size-base"/> | <FloatingToken token="font-size-base"/> | <FloatingToken token="icon-gap-base"/> |
+| <FloatingToken token="icon-size-lg"/> | <FloatingToken token="font-size-lg"/> | <FloatingToken token="icon-gap-lg"/> |
+| <FloatingToken token="icon-size-xl"/> | <FloatingToken token="font-size-xl"/> | <FloatingToken token="icon-gap-xl"/> |
+| <FloatingToken token="icon-size-2xl"/> | <FloatingToken token="font-size-2xl"/> | <FloatingToken token="icon-gap-2xl"/> |
+| <FloatingToken token="icon-size-3xl"/> | <FloatingToken token="font-size-3xl"/> | <FloatingToken token="icon-gap-3xl"/> |
+| <FloatingToken token="icon-size-4xl"/> | <FloatingToken token="font-size-4xl"/> | <FloatingToken token="icon-gap-4xl"/> |
+| <FloatingToken token="icon-size-5xl"/> | <FloatingToken token="font-size-5xl"/> | <FloatingToken token="icon-gap-5xl"/> |
+| <FloatingToken token="icon-size-6xl"/> | <FloatingToken token="font-size-6xl"/> | <FloatingToken token="icon-gap-6xl"/> |

@@ -6,6 +6,17 @@ export default defineConfig({
   description: "WIP",
   appearance: false,
   ignoreDeadLinks: true,
+  head: [
+
+    [
+      'script',
+      {
+        async: true,
+        type: 'module',
+        src: 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/components/tooltip/tooltip.js'
+      }
+    ],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

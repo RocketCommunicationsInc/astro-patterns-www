@@ -1,6 +1,8 @@
 <script setup>
 import tokens from '../tokens.json'
 
+import FloatingToken from '../.vitepress/components/FloatingToken.vue'
+
 const filterTokensByType = (filterName) => {
  return Object.entries(tokens).filter((key) => {
   return key[1].type === filterName
@@ -17,6 +19,9 @@ const convertPxToRem = (px) => {
 
 # Typography
 
+
+<FloatingToken token="font-size-xl"></FloatingToken>
+
 Astro typography is built using a [modular scale](https://alistapart.com/article/more-meaningful-typography/). We use the Major Second (1.125) scale with a base font size of 16px.
 
 ## Font Sizes
@@ -26,8 +31,8 @@ Astro typography is built using a [modular scale](https://alistapart.com/article
   <p class="m-0 p-0 leading-none" :style="{ 'font-size': `${token[1].value}px` }">
    One ring to rule them all
   </p>
-  <div class="flex flex-col">
-  <p class="m-0 mt-2 p-0 text-sm font-mono text-gray-400">{{ token[0] }}</p>
+  <div class="inline-flex flex-col">
+  <FloatingToken :token="token[0]"></FloatingToken>
   <span class="text-xs text-gray-400">{{token[1].value}}px / {{convertPxToRem(token[1].value)}}rem</span>
   </div>
  </li>
@@ -42,8 +47,8 @@ Use our line height tokens for better control over paragraphs or content that sp
   <p class="m-0 p-0" :style="{ 'line-height': `${token[1].value}` }">
   “You cannot pass,” he said. The orcs stood still, and a dead silence fell. “I am a servant of the Secret Fire, wielder of the flame of Anor. You cannot pass. The dark fire will not avail you, flame of Udûn. Go back to the Shadow! You cannot pass.”
   </p>
-  <div class="flex flex-col">
-  <p class="m-0 mt-2 p-0 text-sm font-mono text-gray-400">{{ token[0] }}</p>
+  <div class="inline-flex flex-col">
+  <FloatingToken :token="token[0]"></FloatingToken>
   <span class="text-xs text-gray-400">{{token[1].value}}</span>
   </div>
  </li>
