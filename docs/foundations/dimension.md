@@ -73,6 +73,7 @@ Icon sizes map 1:1 with font sizes.
 
 > Implementation Tip: set SVGs `width` and `height` to `1em` to inherit font size rather than explicitly using the icon-size tokens.
 
+<hr>
 
 <ul class="list-none leading-none m-0 p-0 mt-4">
 	<li v-for="(token, index) in dimensionTokens" :index="token[0]" class="list-none mb-8 ">

@@ -33,9 +33,9 @@ Astro typography is built using a [modular scale](https://alistapart.com/article
   <p class="m-0 p-0 leading-none" :style="{ 'font-size': `${token[1].value}px` }">
    One ring to rule them all
   </p>
-  <div class="inline-flex flex-col">
+  <div class="gap-2 mt-2 inline-flex flex-col">
   <FloatingToken :token="token[0]"></FloatingToken>
-  <span class="text-xs text-gray-400">{{token[1].value}}px / {{convertPxToRem(token[1].value)}}rem</span>
+  <div class="text-xs text-gray-400">{{token[1].value}}px / {{convertPxToRem(token[1].value)}}rem</div>
   </div>
  </li>
 </ul>
@@ -44,12 +44,14 @@ Astro typography is built using a [modular scale](https://alistapart.com/article
 
 Use our line height tokens for better control over paragraphs or content that spans multiple lines.
 
+<hr> 
+
 <ul class="list-none  m-0 p-0 mt-8">
  <li v-for="(token, index) in filterTokensByType('lineHeights')" :index="token[0]" class="list-none mb-8">
   <p class="m-0 p-0" :style="{ 'line-height': `${token[1].value}` }">
   “You cannot pass,” he said. The orcs stood still, and a dead silence fell. “I am a servant of the Secret Fire, wielder of the flame of Anor. You cannot pass. The dark fire will not avail you, flame of Udûn. Go back to the Shadow! You cannot pass.”
   </p>
-  <div class="inline-flex flex-col">
+  <div class="inline-flex flex-col gap-2 mt-2">
   <FloatingToken :token="token[0]"></FloatingToken>
   <span class="text-xs text-gray-400">{{token[1].value}}</span>
   </div>
