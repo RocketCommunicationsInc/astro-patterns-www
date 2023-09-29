@@ -16,6 +16,14 @@ export default defineConfig({
     }
   },
   head: [
+    [
+      'script',
+      {
+        async: true,
+        src: 'https://cpwebassets.codepen.io/assets/embed/ei.js'
+      }
+
+    ],
     // [
     //   'script',
     //   {
@@ -38,6 +46,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Installation', link: '/installation.html' },
       { text: 'Foundations', link: '/foundations/index.html' },
       { text: 'Patterns', link: '/patterns/index.html' },
       { text: 'v0.0.1' }
@@ -56,6 +65,10 @@ export default defineConfig({
         }
       ]
     },
+    // footer: {
+    //   message: 'Released under the MIT License.',
+    //   copyright: 'Copyright © 2019-present Evan You'
+    // },
     // sidebar: [
     //   {
     //     text: 'Examples',

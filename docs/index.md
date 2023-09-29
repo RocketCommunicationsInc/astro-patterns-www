@@ -5,10 +5,10 @@ layout: home
 hero:
   name: "Astro UXDS Nova"
   tagline: A more modular, reimagined version of Astro UXDS
-  # actions:
-    # - theme: brand
-    #   text: Markdown Examples
-    #   link: /markdown-examples
+  actions:
+    - theme: brand
+      text: Get Started
+      link: /installation
     # - theme: alt
     #   text: API Examples
     #   link: /api-examples
