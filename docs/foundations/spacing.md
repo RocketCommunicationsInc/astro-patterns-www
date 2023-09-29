@@ -58,12 +58,12 @@ Astro uses a numeric, linear spacing scale with a <FloatingToken token="base-spa
 
 
 <ul class="list-none leading-none m-0 p-0 mt-4">
- <li v-for="(token, index) in filterTokensByType('spacing')" :index="token[0]" class="list-none mb-3">
+ <li v-for="(token, index) in filterTokensByType('spacing')" :index="token[0]" class="list-none mb-3 border-b">
   <div class="m-0 p-0 leading-none" >
   <div class="h-4 block bg-gray-800" :style="{ 'width': `${token[1].value}` }"></div>
   </div>
-  <div class="flex flex-col">
-	<FloatingToken :token="token[0]" class="inline-flex"/>
+  <div class="flex flex-col my-4">
+	<FloatingToken :token="token[0]" class="my-2"/>
 	<span class="text-xs text-gray-400">{{ token[1].value }} / {{ convertPxToRem(token[1].value.replace('px','')) }}rem</span>
   </div>
  </li>
