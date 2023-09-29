@@ -43,6 +43,9 @@ export default defineConfig({
     ],
   ],
   themeConfig: {
+    notFound: {
+      quote: "All that is gold does not glitter, not all those who wander are lost."
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
